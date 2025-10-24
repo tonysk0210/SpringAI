@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//mnt/c/Users/USER/IdeaProjects/SpringAI/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
