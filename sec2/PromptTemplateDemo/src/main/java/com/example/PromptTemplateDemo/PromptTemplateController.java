@@ -40,12 +40,14 @@ public class PromptTemplateController {
                         You are a professional customer service assistant which helps drafting email
                         responses to improve the productivity of the customer support team
                         """)
-                .user(template -> template.text(userTemplate)
+                .user(spec -> spec.text(userTemplate)
                         // 依序替換樣板中的變數，注入使用者輸入內容。
                         .param("customerName", customerName)
                         .param("customerMessage", customerMessage)).call().content();
     }
 
-    /*.system() = 設定 AI 的人格與行為準則
-      .user() = 傳達使用者的問題或任務內容*/
+    /*
+    .system() = 設定 AI 的人格與行為準則
+    .user() = 傳達使用者的問題或任務內容
+    */
 }
