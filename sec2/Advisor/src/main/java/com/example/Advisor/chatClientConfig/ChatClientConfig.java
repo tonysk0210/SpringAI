@@ -31,20 +31,20 @@ public class ChatClientConfig {
     }
 }
 
-/*
-User: "I used 5 leaves this year..."
-        │
-        ▼
-[SimpleLoggerAdvisor.before()]
-  → log "request" (System + User prompt)
-        │
-        ▼
-    LLM (gpt-4o-mini)
-        │
-        ▼
-[SimpleLoggerAdvisor.after()]
-  → log "response" (AI 回答 + metadata)
-        │
-        ▼
-Controller 回傳 AI 回覆給使用者
-* */
+/**
+ * User: "I used 5 leaves this year..."
+ * │
+ * ▼
+ * [SimpleLoggerAdvisor.before()]
+ * → log "request" (System + User prompt)
+ * │
+ * ▼
+ * LLM (gpt-4o-mini)
+ * │
+ * ▼
+ * [SimpleLoggerAdvisor.after()]
+ * → log "response" (AI 回答 + metadata)
+ * │
+ * ▼
+ * Controller 回傳 AI 回覆給使用者
+ */
