@@ -51,6 +51,31 @@
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
+        <!--docker-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-docker-compose</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+        <!--Spring AI 的 RAG（Retrieval-Augmented Generation）核心模組-->
+        <!--feature: 想做問答系統、知識查詢-->
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-rag</artifactId>
+        </dependency>
+        <!--Spring AI 的 Advisor 擴充模組，讓你可以透過「向量資料庫」作為 Advisor（顧問）使用-->
+        <!--feature: 想讓 ChatClient 對話時自動查資料-->
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-advisors-vector-store</artifactId>
+        </dependency>
+        <!--Qdrant 向量資料庫的 Spring Boot Starter-->
+        <!--feature: 使用 Qdrant 當向量儲存後端-->
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-starter-vector-store-qdrant</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
