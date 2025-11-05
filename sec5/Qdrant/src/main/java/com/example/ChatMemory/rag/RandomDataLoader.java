@@ -27,3 +27,18 @@ public class RandomDataLoader {
         vectorStore.add(documents);
     }
 }
+
+/**
+ * Spring Boot 啟動
+ * │
+ * ▼
+ * Spring 建立 ApplicationContext
+ * │
+ * ├─ 掃描 @Component → 建立 RandomDataLoader Bean
+ * │
+ * ├─ 檢查建構子參數 → 自動注入 VectorStore 物件
+ * │
+ * ├─ Bean 建立完成
+ * │
+ * └─ 執行 @PostConstruct 方法 → LoadSentenceIntoVectorStore()
+ */
