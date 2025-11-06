@@ -76,6 +76,18 @@ public class ChatMemoryChatClientConfig {
          *    ↓
          * ChatClient: LLM 生成回答
          */
+
+        /**
+         *User query
+         *    ↓
+         * OpenAiEmbeddingModel → 產生 query embedding
+         *    ↓
+         * VectorStore (例如 Qdrant) → 比對相似度、取出最相似文件
+         *    ↓
+         * RetrievalAugmentationAdvisor → 把這些文件餵給 LLM
+         *    ↓
+         * OpenAiChatModel (或其他 LLM) → 根據 context 生成回答
+         */
     }
 
 }
