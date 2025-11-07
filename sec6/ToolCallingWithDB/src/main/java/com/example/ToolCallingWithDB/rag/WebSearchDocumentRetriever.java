@@ -1,4 +1,4 @@
-package com.example.ToolCalling.rag;
+package com.example.ToolCallingWithDB.rag;
 
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;

@@ -1,4 +1,4 @@
-package com.example.ToolCalling;
+package com.example.ToolCallingWithDB;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.memory.ChatMemory;

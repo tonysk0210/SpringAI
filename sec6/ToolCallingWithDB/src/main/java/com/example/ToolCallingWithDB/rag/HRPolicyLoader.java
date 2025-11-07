@@ -1,4 +1,4 @@
-package com.example.ToolCalling.rag;
+package com.example.ToolCallingWithDB.rag;
 
 import jakarta.annotation.PostConstruct;
 import org.springframework.ai.document.Document;
