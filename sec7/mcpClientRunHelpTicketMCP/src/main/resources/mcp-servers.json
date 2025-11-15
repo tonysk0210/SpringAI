@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx.cmd",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "C:\\Users\\USER\\Desktop\\mcp"
+      ]
+    },
+    "ticket-helper": {
+      "command": "C:\\Program Files\\Java\\jdk-25\\bin\\java.exe",
+      "args": [
+        "-jar",
+        "C:\\Users\\USER\\IdeaProjects\\SpringAI\\sec7\\BuildMCPstdio\\target\\BuildMCPstdio-0.0.1-SNAPSHOT.jar"
+      ]
+    }
+  }
+}
